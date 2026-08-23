@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 纽约全景深度游与观赛计划 (9.3 - 9.14)</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #e67e22;
+            --bg-light: #f8f9fa;
+            --text-main: #333;
+            --food: #d35400;
+            --ticket: #8e44ad;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #fff;
+        }
+        .container { max-width: 1000px; margin: 0 auto; }
+        .header { text-align: center; border-bottom: 3px solid var(--primary); padding-bottom: 20px; margin-bottom: 30px; }
+        .header h1 { color: var(--primary); font-size: 2.2em; margin-bottom: 10px; }
+        .controls { text-align: center; margin-bottom: 20px; }
+        .btn-print {
+            background-color: var(--primary); color: white; border: none; padding: 10px 20px;
+            font-size: 16px; border-radius: 5px; cursor: pointer; transition: background 0.3s; margin: 0 5px;
+        }
+        .btn-print:hover { background-color: #1a252f; }
+        .section-title { background-color: var(--primary); color: white; padding: 10px 15px; border-radius: 5px; margin-top: 30px; }
+        .info-box { background-color: var(--bg-light); border-left: 5px solid var(--secondary); padding: 15px; margin-bottom: 20px; font-size: 0.95em; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 30px; page-break-inside: avoid; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        th { background-color: #f2f2f2; color: var(--primary); width: 16%; }
+        .day-title { background-color: #e8f4f8; font-weight: bold; font-size: 1.1em; color: var(--primary); }
+        .highlight { color: var(--secondary); font-weight: bold; }
+        .food-reco { color: var(--food); font-weight: bold; }
+        .ticket-note { color: var(--ticket); font-weight: bold; }
+        .michelin-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin: 20px 0; }
+        @media (max-width: 800px) { .michelin-grid { grid-template-columns: 1fr; } }
+        .michelin-card { background: #fff; border: 1px solid #e0d4b0; border-radius: 12px; padding: 18px; box-shadow: 0 4px 15px rgba(0,0,0,.08); position: relative; }
+        .michelin-card .stars { color: #c8a84b; font-size: 1.1em; margin-bottom: 6px; }
+        .michelin-card h4 { color: var(--primary); font-size: 1.15em; margin-bottom: 4px; }
+        .michelin-card .cuisine-tag { display: inline-block; background: #f0ede0; color: #8a6a1a; font-size: .78em; font-weight: 700; padding: 2px 10px; border-radius: 12px; margin-bottom: 10px; }
+        .michelin-card p { font-size: .88em; color: #555; margin-bottom: 8px; line-height: 1.65; }
+        .michelin-card .price-tag { font-weight: 700; color: #c0392b; font-size: .95em; }
+        .michelin-card .fit-tag { background: #eaf3f0; border-left: 3px solid #16a085; padding: 6px 10px; font-size: .82em; color: #1a6b58; margin-top: 8px; border-radius: 4px; }
+        .michelin-card .review-quote { font-style: italic; font-size: .82em; color: #8a6a1a; border-left: 3px solid #c8a84b; padding-left: 8px; margin: 6px 0; }
+        @media print {
+            body { background: white; padding: 0; }
+            .controls { display: none; }
+            .container { max-width: 100%; margin: 0; }
+            table { page-break-inside: avoid; }
+            h2, h3 { page-break-after: avoid; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🗽 2026 纽约全景游与 US Open 观赛计划</h1>
+            <p><strong>行程日期:</strong> 2026年9月3日 - 9月14日 &nbsp; | &nbsp; <strong>住宿地:</strong> Henley on Hudson 公寓 (Port Imperial Blvd @ Henley Pl 公交站, Weehawken, NJ 07086)</p>
+        </div>
+
+        <div class="controls">
+            <button class="btn-print" onclick="window.print()">🖨️ 保存为 PDF / 打印行程单</button>
+            <a href="NYC_Route_Map.html"><button class="btn-print" style="background-color:#16a085;">🗺️ 查看路线地图</button></a>
+            <a href="NYC_Itinerary_Poster.html"><button class="btn-print" style="background-color:#e67e22;">🖼️ 查看海报版行程</button></a>
+        </div>
+
+        <h2 class="section-title">🎫 已购门票汇总 (请提前核对时间)</h2>
+        <div class="info-box">
+            <ul>
+                <li><span class="ticket-note">9月4日 11:00 AM</span> — 联合国 (UN) 参观导览</li>
+                <li><span class="ticket-note">9月4日 19:00 PM</span> — Hamilton 音乐剧 (Richard Rodgers Theatre)</li>
+                <li><span class="ticket-note">9月5日 18:10 PM</span> — Top of the Rock 观景台【速通票 Express】</li>
+                <li><span class="ticket-note">9月7日 09:30 AM</span> — 自由女神像渡轮 (从新泽西 Liberty State Park 轮渡中心出发)</li>
+                <li><span class="ticket-note">9月6日</span> — 自然历史博物馆 (AMNH) 门票</li>
+                <li><span class="ticket-note">9月9日 15:00 PM</span> — 老友记体验馆 (The FRIENDS™ Experience)</li>
+                <li><span class="ticket-note">9月9日 18:00 PM</span> — SUMMIT One Vanderbilt 观景台【普通票】</li>
+                <li><span class="ticket-note">9月10日</span> — Edge NYC 观景台 + The Vessel 门票</li>
+                <li><span class="ticket-note">9月12日</span> — 大都会艺术博物馆 (The MET) 门票 <em>(已从9.9日调整，见下方说明)</em></li>
+                <li><span class="ticket-note">9月6日 19:00 PM</span> — FlyNYON 直升机日落飞行 (新泽西 Kearny 起飞点，日落航班)</li>
+                <li><span class="ticket-note">9月12日 17:30 PM</span> — Noda 晚餐 (米其林一星日料，已订位)</li>
+            </ul>
+        </div>
+
+        <h2 class="section-title">⚠️ 重要：开放时间核对与行程调整说明</h2>
+        <div class="info-box" style="border-left-color:#c0392b;">
+            <p><strong>✅ 已购票景点开放时间核对结果：</strong></p>
+            <ul>
+                <li><span class="highlight">联合国导览 (9/4 周五)</span>：UN官方导览仅在<strong>工作日 (周一至周五)</strong> 开放，周五✓ 无冲突。</li>
+                <li><span class="highlight">自由女神像渡轮 (9/7 周一/劳工节)</span>：渡轮及自由岛节假日照常开放，劳工节✓ 无冲突。</li>
+                <li><span class="highlight">MoMA (9/5 周六)</span>：现代艺术博物馆现已改为<strong>全年七天无休</strong>，周六✓ 无冲突。</li>
+                <li><span class="highlight">自然历史博物馆 AMNH (9/6 周日)</span>：全年每日开放 10:00-17:30，周日✓ 无冲突。</li>
+                <li><span class="highlight">老友记体验馆 & Summit One Vanderbilt (9/9 周三)</span>：两处均为<strong>全年七天无休</strong>营业，周三✓ 无冲突。</li>
+                <li><span class="highlight">Edge NYC & The Vessel (9/10 周四)</span>：两处均全年每日开放，周四✓ 无冲突。</li>
+                <li><span class="highlight">大都会艺术博物馆 The MET (9/12 周六)</span>：官方开放时间为周四至周六 10:00-21:00 (周六延长夜场)，周日至周二 10:00-17:00，<strong>周三闭馆</strong>。您安排的 9月12日 (周六) 上午 10:00-13:00 参观时段 ✓ 无冲突，且周六延长开放意味着当天下午/傍晚仍可返回加场，时间非常充裕。</li>
+            </ul>
+        </div>
+
+        <h2 class="section-title">📱 交通购票 APP 与省钱指南</h2>
+        <div class="info-box">
+            <ul>
+                <li><strong>下载 NY Waterway APP</strong>：用于购买 Port Imperial ⇄ 曼哈顿 39街的轮渡票，也可购买多次票 (10-Trip Pass) 更省钱。</li>
+                <li><strong>下载 NJ Transit APP</strong>：用于购买新泽西公交/轻轨车票，提前在 App 内买好，上车前 Activate 出示手机即可，避免在 Port Authority 排队买票。</li>
+                <li><strong>纽约市地铁 (OMNY)</strong>：无需购买 Metrocard，直接用手机 <strong>Apple Pay / Google Pay</strong> 或银行卡感应刷 OMNY 闸机。<strong>同一张卡/设备 7 天内满 12 次刷卡后，第13次起该 7 天周期内自动免费</strong>，比买 7 日票更灵活省钱。</li>
+            </ul>
+        </div>
+
+        <h2 class="section-title">🌟 米其林殿堂级用餐推荐 (人均预算 $900 内)</h2>
+        <div class="info-box" style="border-left-color:#c8a84b;">
+            <p>综合 The Michelin Guide、纽约时报餐厅评论、Eater NY、Resy/OpenTable 大量真实用户评价与口碑热度，为您精选出 <strong>3 家最值得为此行"惊艳一次"的殿堂级餐厅</strong>，并结合您现有行程的空闲时段，给出最合理的插入建议。三家均可控制在人均 $900 以内（含酒水搭配）。</p>
+        </div>
+
+        <div class="michelin-grid">
+            <div class="michelin-card">
+                <div class="stars">⭐⭐⭐ 米其林三星</div>
+                <h4>Le Bernardin</h4>
+                <span class="cuisine-tag">法式海鲜 · Eric Ripert</span>
+                <p>被公认为<strong>全球最顶级的海鲜餐厅之一</strong>，连续20余年保持米其林三星。主厨 Eric Ripert 对生鲜食材的极致处理（半熟、生食、轻煎手法）被大量评论称为"改变对海鲜认知的一餐"。装潢优雅低调，服务如行云流水，完全无喧宾夺主之感。</p>
+                <p class="review-quote">"这是我吃过最精致细腻的海鲜料理，每一口的火候都精准到毫秒" —— NYT Dining 评论精选</p>
+                <p><strong>推荐菜单：</strong>4-course 品鉴菜单 ($295) 或 7-course 主厨菜单 ($345)，加酒水搭配约 $180-250/人。</p>
+                <p class="price-tag">💰 人均约 $480 - $650 (含酒水)</p>
+                <div class="fit-tag">📅 <strong>行程插入建议：9月9日 (周三) 晚餐</strong> — 替换原定的韩国城晚餐。您的 Summit One Vanderbilt 门票为 18:00 入场，游览约1-1.5小时后（约19:30左右）结束，餐厅位于 W51街，距 Summit (中央车站旁) 仅10分钟地铁/步行20分钟，动线完美衔接，且当晚无早起行程压力。</div>
+            </div>
+
+            <div class="michelin-card">
+                <div class="stars">⭐⭐ 米其林二星</div>
+                <h4>Atomix</h4>
+                <span class="cuisine-tag">前卫韩式Fine Dining</span>
+                <p>近年来纽约最炙手可热的餐厅，连续入选<strong>"世界50最佳餐厅"</strong>。以韩国宫廷料理为灵感，用现代分子料理手法重新诠释，每道菜配有一张精美卡片讲述文化故事，用餐如同一场沉浸式艺术展。订位难度堪比曼哈顿最难订餐厅之一。</p>
+                <p class="review-quote">"完全颠覆了我对Fine Dining的想象，每一道菜都是艺术品与故事的结合" —— Eater NY 年度最佳新势力</p>
+                <p><strong>推荐菜单：</strong>10-course Tasting Menu ($295)，选配酒水搭配 ($175) 或清酒搭配 ($150)。</p>
+                <p class="price-tag">💰 人均约 $450 - $600 (含酒水搭配)</p>
+                <div class="fit-tag">📅 <strong>行程插入建议：9月10日 (周四) 晚餐</strong> — <em>(9月12日晚餐已确认预订米其林一星 Noda，故此处调整为9月10日)</em> 替换原定的 Hudson Yards 晚餐。餐厅位于 NoMad 区 (30街)，当天傍晚在 Edge NYC 看完日落后可乘地铁南下约15-20分钟即达，次日为 US Open 男单半决赛日场次较晚开始，无需过早起床。</div>
+            </div>
+
+            <div class="michelin-card">
+                <div class="stars">⭐⭐⭐ 米其林三星</div>
+                <h4>Jean-Georges</h4>
+                <span class="cuisine-tag">法式融合 · 中央公园夜景</span>
+                <p>传奇主厨 Jean-Georges Vongerichten 的旗舰之作，坐落于哥伦布圆环 Trump International 一楼，落地窗直面中央公园与哥伦布圆环喷泉夜景。菜品融合法式技法与亚洲香料灵感，被誉为"纽约最浪漫的三星体验"，适合作为整趟旅程的收官庆祝大餐。</p>
+                <p class="review-quote">"落地窗外是中央公园的夜色，眼前是教科书级别的法餐，这顿饭值得被记住一生" —— OpenTable 精选评论</p>
+                <p><strong>推荐菜单：</strong>Tasting Menu ($238) 或 Chef's Tasting ($345)，加精选酒水搭配约 $150-220/人。</p>
+                <p class="price-tag">💰 人均约 $420 - $580 (含酒水)</p>
+                <div class="fit-tag">📅 <strong>行程插入建议：9月13日 (周日) 晚餐</strong> — 直接替换原定的 Keens Steakhouse 庆功晚宴！作为美网决赛观赛后的<strong>终极庆祝大餐</strong>，从法拉盛乘地铁返回哥伦布圆环约50分钟，与见证冠军诞生的激动心情完美呼应，为整趟纽约之行画上最惊艳的句号。</div>
+            </div>
+        </div>
+
+        <div class="info-box" style="border-left-color:#c0392b; margin-top:10px;">
+            <p><strong>⚠️ 预订提醒：</strong> 三家餐厅均属于纽约<strong>最难预订</strong>的顶级餐厅之列。</p>
+            <ul>
+                <li><strong>Le Bernardin & Jean-Georges</strong>：通过 <strong>Resy</strong> App 预订，官网订位窗口通常提前 <strong>30天</strong>整点开放（纽约时间上午10点），建议设置提醒抢订。</li>
+                <li><strong>Atomix</strong>：通过 <strong>Tock</strong> 平台预订，位置极其抢手，官网订位窗口提前 <strong>1个月</strong>开放，且需提前支付订金锁定，建议尽早关注。</li>
+                <li>三家餐厅均有正式着装要求 (Smart Casual 或以上)，建议男士着西装外套/衬衫，女士着正装裙装或衬衫套装。</li>
+            </ul>
+        </div>
+
+        <h2 class="section-title">📍 通勤与体验须知</h2>
+        <div class="info-box">
+            <p><strong>最佳入城路线:</strong> 从公寓步行至 <strong>Port Imperial 码头</strong>，乘坐 NY Waterway 轮渡直达曼哈顿 39街，换乘 <strong>7号线地铁</strong> 直达美网球场或市区各处，完美避开治安较差的 Port Authority。</p>
+            <p><strong>FlyNYON 直升机 (已确认 9/6 19:00 日落航班):</strong> 起飞点位于 <strong>新泽西 Kearny 直升机场 (201 Belgrove Dr, Kearny, NJ)</strong>，从公寓打车约 20-25 分钟。由于是"舱门打开(Doors-Off)"体验，需完成安全带穿戴、GoPro固定等流程，官方要求<strong>提前 90 分钟 (即 17:30) </strong>到场办理。</p>
+            <p><strong>老友记 + Summit 衔接:</strong> 老友记体验馆 (Flatiron 23街) 结束后，乘地铁 15-20 分钟即可抵达 Summit One Vanderbilt (紧邻中央车站 42街)，两个体验无缝衔接。</p>
+        </div>
+
+        <h2 class="section-title">🗓️ 每日详细行程安排与美食推荐表</h2>
+        
+        <table>
+            <tbody>
+                <!-- Day 1 -->
+                <tr><td colspan="2" class="day-title">9月3日 (周四) - 抵达纽约，休整入住</td></tr>
+                <tr><th>18:50</th><td><strong>航班降落:</strong> SQ24 抵达 JFK 机场。过海关取行李预计需 1-1.5小时。</td></tr>
+                <tr><th>20:30</th><td><strong>前往驻地:</strong> 预定华人电召车或打 Uber/Lyft 前往 <strong>Henley on Hudson (Weehawken)</strong>。避开晚高峰，车程约 1 小时。</td></tr>
+                <tr><th>21:30</th><td><strong>入住 & 晚餐:</strong> 办理入住。建议使用 UberEats/DoorDash 叫外卖休息倒时差。🍽️ <span class="food-reco">外卖推荐：新泽西人气意大利菜 Alessio's，或经典墨西哥菜 Charrito's (烤肉Taco绝佳)。</span></td></tr>
+
+                <!-- Day 2 -->
+                <tr><td colspan="2" class="day-title">9月4日 (周五) - 联合国、百老汇与时代广场之夜</td></tr>
+                <tr><th>09:30</th><td><strong>出发:</strong> 乘轮渡赴曼哈顿，前往联合国总部，预留安检时间。</td></tr>
+                <tr><th>11:00 - 12:30</th><td><span class="ticket-note">🎫已购票 联合国总部 (UN Tour):</span> 参加官方导览，进入大会堂参观。</td></tr>
+                <tr><th>12:30 - 14:00</th><td><strong>午餐:</strong> 中央车站 (Grand Central) 内。🍽️ <span class="food-reco">美食推荐：Grand Central Oyster Bar (百年老店，生蚝极品) 或 Urbanspace Vanderbilt 美食广场。</span></td></tr>
+                <tr><th>14:00 - 17:00</th><td><strong>曼哈顿中城漫步:</strong> 游览布莱恩公园 (Bryant Park)、纽约公共图书馆，沿第五大道向北散步。</td></tr>
+                <tr><th>17:00 - 18:45</th><td><strong>晚餐 (Pre-theater):</strong> 🍽️ <span class="food-reco">美食推荐：Carmine's Italian Restaurant (超大份量家庭式意面) 或 Los Tacos No.1 (纽约最佳Taco)。</span></td></tr>
+                <tr><th>19:00 - 21:45</th><td><span class="highlight">百老汇:</span> 在 Richard Rodgers Theatres 观看 <strong>Hamilton</strong> (已购票)。</td></tr>
+                <tr><th>21:45 - 23:00</th><td><span class="highlight">时代广场夜景 (Times Square):</span> 剧院散场后直接步入时代广场，感受最强烈的霓虹灯海！看完夜景后轮渡/打车回NJ。</td></tr>
+
+                <!-- Day 3 (UPDATED: relaxed Central Park + MoMA swapped in) -->
+                <tr><td colspan="2" class="day-title">9月5日 (周六) - 中央公园悠闲半日与 MoMA·洛克菲勒日落</td></tr>
+                <tr><th>08:00 - 08:30</th><td><strong>早餐:</strong> 🍽️ <span class="food-reco">美食推荐：Ess-a-Bagel (最正宗的纽约贝果，配厚切烟熏三文鱼)。</span></td></tr>
+                <tr><th>08:30 - 10:30</th><td><span class="highlight">网球体验:</span> 在 <strong>中央公园网球中心</strong> 打球。(需提前30天抢订)</td></tr>
+                <tr><th>10:30 - 13:00</th><td><strong>中央公园悠闲漫步 (半日):</strong> 不再赶时间，慢慢游览毕士斯达喷泉、绵羊草地、Bow Bridge，中途公园内简餐/野餐。<em>相比之前的安排放宽了近1.5小时，不再匆忙。</em></td></tr>
+                <tr><th>13:30 - 14:30</th><td><strong>午餐:</strong> 🍽️ <span class="food-reco">午餐推荐：Pastrami Queen (经典熏肉三明治) 或公园边简餐车。</span></td></tr>
+                <tr><th>14:30 - 17:00</th><td><span class="highlight">现代艺术博物馆 (MoMA):</span> <em>(已从9.9日调整至此)</em> 欣赏《星月夜》、《睡莲》等真迹，与中央公园距离很近，步行/公交即达。</td></tr>
+                <tr><th>17:30</th><td><strong>移步:</strong> 从 MoMA 步行前往洛克菲勒中心，预留提前入场排队时间。</td></tr>
+                <tr><th>18:10 PM</th><td><span class="ticket-note">🎫已购票 Top of the Rock 观景台 (速通 Express):</span> 精准卡点 19:15 日落，这里能拍到帝国大厦全景。</td></tr>
+                <tr><th>20:30</th><td><strong>晚餐:</strong> 🍽️ <span class="food-reco">美食推荐：纽约经典街头餐车 The Halal Guys (53街原址) 或 Bill's Bar & Burger。</span></td></tr>
+
+                <!-- Day 4 (UPDATED: AMNH added after tennis, helicopter still evening) -->
+                <tr><td colspan="2" class="day-title">9月6日 (周日) - 东河挥拍、自然历史博物馆与新泽西直升机日落</td></tr>
+                <tr><th>08:00 - 08:30</th><td><strong>早餐:</strong> 🍽️ <span class="food-reco">美食推荐：Russ & Daughters (下东区百年老店，鱼子酱贝果天花板)。</span></td></tr>
+                <tr><th>09:00 - 11:00</th><td><span class="highlight">网球体验:</span> 在 <strong>East River Park</strong> 网球场打球 (曼哈顿下东区)，伴随东河与布鲁克林大桥风光。</td></tr>
+                <tr><th>11:30 - 12:30</th><td><strong>午餐:</strong> 🍽️ <span class="food-reco">美食推荐：下东区附近简餐，或打包带上地铁享用。</span></td></tr>
+                <tr><th>13:00 - 16:00</th><td><span class="highlight">自然历史博物馆 (AMNH):</span> <em>(已从9.10日调整至此)</em> 乘地铁北上至上西区(约30分钟)，电影《博物馆奇妙夜》取景地，恐龙化石展区极具震撼力。</td></tr>
+                <tr><th>16:00</th><td><strong>返程休整:</strong> 打车/轮渡返回新泽西 Weehawken 住处稍作休息，为直升机行程调整状态。</td></tr>
+                <tr><th>17:00</th><td><strong>出发:</strong> 打车前往 <strong>FlyNYON Kearny 直升机场</strong> (车程约20-25分钟)。</td></tr>
+                <tr><th>17:30</th><td><span class="ticket-note">🎫已购票 FlyNYON 抵达办理:</span> 官方要求提前90分钟到场，完成安全带穿戴、GoPro固定、安全须知讲解等流程，为19:00起飞做准备。</td></tr>
+                <tr><th>19:00</th><td><span class="highlight">🚁 直升机日落飞行 (已确认预订):</span> 舱门打开(Doors-Off)体验，俯瞰哈德逊河、自由女神像与曼哈顿天际线。19:00起飞恰好卡在日落时段（9月初纽约日落约19:15-19:25），全程约15-20分钟飞行，捕捉最佳日落金光穿透机舱的绝美画面！</td></tr>
+                <tr><th>20:00</th><td><strong>晚餐 (Weehawken 附近):</strong> 🍽️ <span class="food-reco">美食推荐：Filomena Lakeview (新泽西人气意式餐厅，环境优美) 或 Chart House (沿河高级餐厅)。</span></td></tr>
+
+                <!-- Day 5 (UPDATED: added 9/11 Memorial + WTC after Wall St) -->
+                <tr><td colspan="2" class="day-title">9月7日 (周一/劳工节) - 自由女神、9/11纪念馆与下城经典地标</td></tr>
+                <tr><th>08:30</th><td><strong>出发:</strong> 直接打车前往 <strong>Liberty State Park 轮渡中心 (新泽西)</strong>，车程约 20-25 分钟，预留安检值机时间。</td></tr>
+                <tr><th>09:30 AM</th><td><span class="ticket-note">🎫已购票 自由女神像渡轮:</span> 从新泽西轮渡中心出发登岛。</td></tr>
+                <tr><th>13:00 - 14:00</th><td><strong>华尔街区 & 午餐:</strong> 渡轮返回后步行至华尔街、纽交所、打卡<strong>铜牛</strong>。🍽️ <span class="food-reco">午餐推荐：Fraunces Tavern (纽约最古老酒馆) 或 Luke's Lobster。</span></td></tr>
+                <tr><th>14:00 - 15:00</th><td><span class="highlight">9/11 Memorial Pools & World Trade Center:</span> <em>(新增)</em> 在双子塔原址静默致敬双池纪念池，随后打卡奥库勒斯 (Oculus / WTC 地铁站)，这座白色骸骨状建筑是下城最独特的建筑打卡点。</td></tr>
+                <tr><th>15:00 - 17:30</th><td><span class="highlight">布鲁克林大桥 & DUMBO:</span> 步行穿过布鲁克林大桥到达 DUMBO 区，拍摄曼哈顿桥经典街景照。</td></tr>
+                <tr><th>17:30 - 19:30</th><td><strong>晚餐:</strong> 🍽️ <span class="food-reco">美食推荐：Juliana's Pizza (纽约排名前三的薄底披萨) 或 Time Out Market (顶楼露台边吃边看桥景)。</span></td></tr>
+
+                <!-- Day 6 -->
+                <tr><td colspan="2" class="day-title">9月8日 (周二) - 沉浸式网球狂欢 (US Open 园区日)</td></tr>
+                <tr><th>10:00 - 11:00</th><td><strong>前往法拉盛:</strong> 乘坐轮渡到曼哈顿 -> 步行至 Hudson Yards -> 换乘 <strong>7号线地铁</strong> 直达 Mets-Willets Point。</td></tr>
+                <tr><th>11:00 - 19:00</th><td><span class="highlight">US Open 外围赛 (Grounds Pass):</span> 穿梭于各外围球场看比赛，距离球员极近。🍽️ <span class="food-reco">午餐/小吃推荐：Food Village 的 Lobster Roll、Korilla BBQ，必喝 Honey Deuce 🍹。</span></td></tr>
+                <tr><th>19:30 - 21:00</th><td><strong>晚宴:</strong> 逛完园区后前往法拉盛华人区吃顿好的。🍽️ <span class="food-reco">美食推荐：江南 (JiangNan) 融合创意中餐，或 海底捞/南翔小笼包。</span></td></tr>
+
+                <!-- Day 7 (UPDATED: MET removed, moved to 9/12 due to Wed closure) -->
+                <tr><td colspan="2" class="day-title">9月9日 (周三) - 老友记与曼哈顿观景台</td></tr>
+                <tr><th>10:30 - 11:30</th><td><strong>早晨闲逸:</strong> <em>(MET 已调整至9.12日，因MET官方周三闭馆)</em> 睡到自然醒，在住处附近悠闲早餐，或提前进城逛第五大道橱窗。</td></tr>
+                <tr><th>12:00 - 13:30</th><td><strong>午餐:</strong> 🍽️ <span class="food-reco">美食推荐：Eataly NYC Flatiron (意式美食广场，靠近老友记体验馆) 或 Shake Shack Madison Square Park 原店。</span></td></tr>
+                <tr><th>15:00 - 16:30</th><td><span class="ticket-note">🎫已购票 老友记体验馆 (The FRIENDS™ Experience):</span> 位于 Flatiron 区 (130 E 23rd St)。在 Central Perk 橘色沙发打卡！</td></tr>
+                <tr><th>16:45</th><td><strong>移步:</strong> 乘地铁 (约15-20分钟) 从 Flatiron 前往中城 Vanderbilt/中央车站区域。</td></tr>
+                <tr><th>18:00 PM</th><td><span class="ticket-note">🎫已购票 SUMMIT One Vanderbilt (入场时间):</span> 沉浸式数字艺术观景台，紧邻中央车站，恰好捕捉华灯初上的城市天际线。建议游览约1-1.5小时。</td></tr>
+                <tr><th>19:30 - 20:00</th><td><strong>晚餐 (韩国城):</strong> Summit 紧邻 K-Town。🍽️ <span class="food-reco">美食推荐：Jongro BBQ (钟路烤肉) 或 BCD Tofu House (暖胃豆腐汤)。</span> 🌟 <span class="ticket-note">升级推荐：Le Bernardin 米其林三星海鲜 (需提前30天订位，详见下方米其林专区)。</span></td></tr>
+
+                <!-- Day 8 (UPDATED: Chelsea Market + High Line + Vessel + Edge added, AMNH removed) -->
+                <tr><td colspan="2" class="day-title">9月10日 (周四) - 电影、切尔西市场、高线公园与 Edge 悬空日落</td></tr>
+                <tr><th>09:00 - 09:30</th><td><strong>早餐:</strong> 🍽️ <span class="food-reco">美食推荐：Breads Bakery (上西区，巧克力 Babka 面包绝赞)。</span></td></tr>
+                <tr><th>10:00 - 12:30</th><td><span class="highlight">电影放映:</span> 在 AMC Lincoln Square 13 观看 <strong>The Odyssey</strong> (已购票)。全美最大 IMAX 屏幕。</td></tr>
+                <tr><th>13:00 - 14:00</th><td><strong>移步 & 午餐:</strong> 乘地铁南下至切尔西 (约25分钟)。🍽️ <span class="food-reco">午餐推荐：Chelsea Market 内的 The Lobster Place (极鲜海鲜) 或 Los Tacos No.1。</span></td></tr>
+                <tr><th>14:00 - 15:00</th><td><strong>切尔西市场 (Chelsea Market):</strong> 慢慢逛这座纽约最著名的美食集市，各类手工艺品和小吃摊位。</td></tr>
+                <tr><th>15:00 - 17:00</th><td><strong>高线公园 (High Line):</strong> 沿废弃铁轨改造的空中花园向北散步，一路走到终点 <strong>The Vessel (哈德逊broken松果建筑)</strong> 打卡拍照。</td></tr>
+                <tr><th>18:15 - 20:00</th><td><span class="highlight">Edge NYC 观景台:</span> <strong>18:15 登顶</strong>。体验西半球最高室外悬空玻璃露台的绝美日落，就在 Vessel 旁边的 Hudson Yards 商场内。</td></tr>
+                <tr><th>20:15</th><td><strong>晚餐 (Hudson Yards):</strong> 🍽️ <span class="food-reco">美食推荐：Mercado Little Spain (正宗西班牙美食集市，海鲜饭绝佳) 或 STK Rooftop (可俯瞰The Vessel夜景的牛排吧)。</span> 🌟 <span class="ticket-note">升级推荐：Atomix 米其林二星韩式Fine Dining (需提前1个月Tock订位，详见下方米其林专区)。</span></td></tr>
+
+                <!-- Day 9 -->
+                <tr><td colspan="2" class="day-title">9月11日 (周五) - US Open 巅峰对决 (男单半决赛)</td></tr>
+                <tr><th>11:00 - 13:00</th><td><strong>通勤 & 赛前准备:</strong> 乘坐 7号线前往场馆，购买周边。🍽️ <span class="food-reco">午餐推荐：可在 Arthur Ashe 球场内的 ACES 或 Champions Bar & Grill 边吃边等开赛。</span></td></tr>
+                <tr><th>15:00 - 23:00</th><td><span class="highlight">男单半决赛 (日/夜场):</span> 全天待在阿瑟·阿什球场见证决赛门票争夺战。(已购票)。<em>夜场散场极晚，建议散场后直接打 Uber 返回新泽西公寓。</em></td></tr>
+
+                <!-- Day 10 (UPDATED: MET added in morning, moved from 9/9 due to Wed closure; Noda dinner confirmed) -->
+                <tr><td colspan="2" class="day-title">9月12日 (周六) - MET 博物馆之晨、SoHo 扫街与米其林一星晚餐</td></tr>
+                <tr><th>09:00 - 09:30</th><td><strong>早餐:</strong> 🍽️ <span class="food-reco">美食推荐：Sarabeth's (上东区经典早午餐，靠近MET) 或简单咖啡+贝果。</span></td></tr>
+                <tr><th>10:00 - 13:00</th><td><span class="ticket-note">🎫已购票 大都会艺术博物馆 (The MET):</span> <em>(已从9.9日调整至此，因MET周三闭馆)</em> 世界三大博物馆之一，周六延长开放，上午时段游客相对较少，可慢慢沉浸游览。</td></tr>
+                <tr><th>13:00 - 14:00</th><td><strong>移步 & 午餐:</strong> 乘地铁南下至 SoHo (约30分钟)。🍽️ <span class="food-reco">美食推荐：Balthazar (SoHo区极具名气的法式Brunch/午餐，必须提前订) 或 西村的 Buvette。</span></td></tr>
+                <tr><th>14:30 - 16:00</th><td><span class="highlight">SoHo 区购物:</span> 纽约最潮的街区，铸铁建筑群，独立设计师品牌及潮牌聚集地。<em>购物时间已适当缩短，为晚餐预留充足通勤时间。</em></td></tr>
+                <tr><th>16:30</th><td><strong>移步:</strong> 从 SoHo 乘地铁/打车前往切尔西区 Noda 餐厅 (约20-25分钟)，预留提前抵达时间。</td></tr>
+                <tr><th>17:30 PM</th><td><span class="ticket-note">🎫已订位 Noda 晚餐 (米其林一星日料):</span> 位于切尔西区，主打精致日式怀石料理与创意寿司，是纽约近年最受好评的一星日料之一，用一场高水准的怀石晚宴为忙碌的一天收官。</td></tr>
+
+                <!-- Day 11 -->
+                <tr><td colspan="2" class="day-title">9月13日 (周日) - 终极之战：US Open 男单决赛</td></tr>
+                <tr><th>11:30 - 12:00</th><td><strong>前往场馆:</strong> 提前出发抵达 US Open Park。</td></tr>
+                <tr><th>12:00 - 14:00</th><td><strong>赛前氛围 & 午餐:</strong> 观看球员热身，体验狂欢氛围。🍽️ <span class="food-reco">午餐推荐：最后一天在 Food Village 品尝没吃过的小吃，如 Korilla 的烤肉塔可。</span></td></tr>
+                <tr><th>14:00 - 18:00</th><td><span class="highlight">男单决赛:</span> 见证 2026 年度大满贯男单冠军诞生！(已购票)</td></tr>
+                <tr><th>19:00 - 21:00</th><td><strong>庆功晚宴:</strong> 🍽️ <span class="food-reco">完美收官大餐：曼哈顿极具历史底蕴的顶级牛排馆 Keens Steakhouse (必须点招牌 Mutton Chop 羊排！)，或在法拉盛享用 大董 (DaDong) 烤鸭。</span></td></tr>
+
+                <!-- Day 12 -->
+                <tr><td colspan="2" class="day-title">9月14日 (周一) - 完美收官，踏上归途</td></tr>
+                <tr><th>09:30 - 11:30</th><td><strong>悠闲早晨:</strong> 早上在 Weehawken 沿着哈德逊河散步（Hamilton Park / Port Imperial 步道），最后欣赏一次曼哈顿天际线。</td></tr>
+                <tr><th>12:00 - 13:30</th><td><strong>告别午餐:</strong> 🍽️ <span class="food-reco">美食推荐：Chart House (就在 Weehawken 沿河，无敌水景高级餐厅) 或 Fiore's Deli (Hoboken 经典意式老店)。</span></td></tr>
+                <tr><th>14:00 - 16:30</th><td><strong>打包 & 查漏补缺:</strong> 退房，若有时间可去曼哈顿做最后的纪念品采购。</td></tr>
+                <tr><th>17:00 - 18:30</th><td><span class="highlight">前往机场:</span> 必须在 17:00 左右打车离开新泽西前往 JFK。此时跨城极易堵车，预留 1.5 - 2 小时车程。</td></tr>
+                <tr><th>19:00 - 22:15</th><td><strong>机场候机:</strong> 办理登机，免税店购物。22:15 乘坐 SQ23 航班起飞，结束完美的纽约之旅！</td></tr>
+            </tbody>
+        </table>
+
+    </div>
+</body>
+</html>

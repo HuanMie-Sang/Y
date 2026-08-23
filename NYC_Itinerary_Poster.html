@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>2026 纽约行程海报</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:#0d1b2a;color:#fff}
+.poster{max-width:1100px;margin:0 auto;padding:40px 30px;background:linear-gradient(160deg,#0d1b2a 0%,#1b2a41 100%)}
+.controls{text-align:center;padding:16px;background:#0d1b2a}
+.btn{background:#c8a84b;color:#1b2a41;border:none;padding:10px 24px;border-radius:24px;font-weight:700;font-size:.95rem;cursor:pointer}
+.btn:hover{background:#e0c06a}
+.title-block{text-align:center;margin-bottom:36px}
+.title-block .badge{display:inline-block;background:#c8a84b;color:#1b2a41;font-size:.75rem;letter-spacing:3px;padding:5px 18px;border-radius:20px;text-transform:uppercase;margin-bottom:14px;font-weight:700}
+.title-block h1{font-size:2.4rem;font-weight:800;letter-spacing:1px}
+.title-block p{margin-top:10px;color:#c8d3e0;font-size:1rem}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:800px){.grid{grid-template-columns:repeat(2,1fr)}}
+.card{background:rgba(255,255,255,.06);border:1px solid rgba(200,168,75,.35);border-radius:14px;padding:16px;position:relative;overflow:hidden}
+.card .daytag{font-size:.7rem;color:#c8a84b;letter-spacing:2px;font-weight:700;text-transform:uppercase}
+.card .date{font-size:1.05rem;font-weight:800;margin:4px 0 8px}
+.card .icons{font-size:1.6rem;margin-bottom:8px;letter-spacing:4px}
+.card ul{list-style:none;font-size:.78rem;color:#dfe6ee;line-height:1.6}
+.card ul li{margin-bottom:3px}
+.card .tag{display:inline-block;background:#c8a84b;color:#1b2a41;font-size:.65rem;font-weight:700;border-radius:10px;padding:1px 8px;margin-left:4px}
+.footer-note{text-align:center;margin-top:36px;font-size:.8rem;color:#9fb0c3}
+.divider{width:70px;height:3px;background:#c8a84b;margin:14px auto 0;border-radius:2px}
+
+@media print{
+  body{background:#0d1b2a !important; -webkit-print-color-adjust: exact; print-color-adjust: exact;}
+  .controls{display:none}
+  .poster{max-width:100%}
+  .grid{grid-template-columns:repeat(3,1fr)}
+  .card{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+
+<div class="controls">
+  <button class="btn" onclick="window.print()">🖨️ 保存为 PDF 海报</button>
+</div>
+
+<div class="poster">
+  <div class="title-block">
+    <div class="badge">NYC × US OPEN 2026</div>
+    <h1>🗽 纽约全景深度游行程海报</h1>
+    <p>2026年9月3日 — 9月14日 &nbsp;|&nbsp; 住宿：Weehawken, NJ (Henley on Hudson)</p>
+    <div class="divider"></div>
+  </div>
+
+  <div class="grid">
+
+    <div class="card">
+      <div class="daytag">Day 01 · 周四</div>
+      <div class="date">9月3日 · 抵达纽约</div>
+      <div class="icons">🛬🏠</div>
+      <ul>
+        <li>18:50 SQ24 落地 JFK</li>
+        <li>打车前往 Weehawken</li>
+        <li>外卖休整倒时差</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="daytag">Day 02 · 周五</div>
+      <div class="date">9月4日 · UN·百老汇·时代广场</div>
+      <div class="icons">🇺🇳🎭🌃</div>
+      <ul>
+        <li>11:00 联合国导览 <span class="tag">已购票</span></li>
+        <li>19:00 汉密尔顿音乐剧</li>
+        <li>21:45 时代广场夜景</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="daytag">Day 03 · 周六</div>
+      <div class="date">9月5日 · 中央公园半日·MoMA·日落</div>
+      <div class="icons">🎾🎨🌇</div>
+      <ul>
+        <li>网球中心 + 中央公园半日悠闲漫步</li>
+        <li>MoMA 现代艺术博物馆</li>
+        <li>18:10 Top of the Rock <span class="tag">已购票</span></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="daytag">Day 04 · 周日</div>
+      <div class="date">9月6日 · 网球·自然历史·直升机</div>
+      <div class="icons">🎾🦖🚁</div>
+      <ul>
+        <li>East River Park 网球</li>
+        <li>自然历史博物馆(AMNH)</li>
+        <li>19:00 FlyNYON 日落飞行 <span class="tag">已确认</span></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="daytag">Day 05 · 周一</div>
+      <div class="date">9月7日 · 自由女神·9/11纪念馆·下城</div>
+      <div class="icons">🗽🕯️🌉</div>
+      <ul>
+        <li>09:30 自由女神像渡轮 <span class="tag">已购票</span></li>
+        <li>华尔街铜牛 + 9/11纪念池 + WTC</li>
+        <li>布鲁克林大桥 + DUMBO</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="daytag">Day 06 · 周二</div>
+      <div class="date">9月8日 · US Open 园区日</div>
+      <div class="icons">🎾🍹</div>
+      <ul>
+        <li>Flushing Meadows 外围赛</li>
+        <li>Grounds Pass 全天</li>
+        <li>法拉盛华人区晚宴</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="daytag">Day 07 · 周三</div>
+      <div class="date">9月9日 · 老友记·Summit</div>
+      <div class="icons">☕✨</div>
+      <ul>
+        <li>悠闲早晨 (MET周三闭馆已调整)</li>
+        <li>15:00 老友记体验馆 <span class="tag">已购票</span></li>
+        <li>18:00 Summit One Vanderbilt <span class="tag">已购票</span></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="daytag">Day 08 · 周四</div>
+      <div class="date">9月10日 · 电影·切尔西·高线·Edge</div>
+      <div class="icons">🎬🌿🌆</div>
+      <ul>
+        <li>10:00 The Odyssey <span class="tag">已购票</span></li>
+        <li>切尔西市场 + 高线公园 + Vessel</li>
+        <li>18:15 Edge NYC 日落</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="daytag">Day 09 · 周五</div>
+      <div class="date">9月11日 · 男单半决赛</div>
+      <div class="icons">🎾🏟️</div>
+      <ul>
+        <li>Arthur Ashe 球场</li>
+        <li>日场 + 夜场 <span class="tag">已购票</span></li>
+        <li>散场打车返回 NJ</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="daytag">Day 10 · 周六</div>
+      <div class="date">9月12日 · MET·SoHo·米其林晚餐</div>
+      <div class="icons">🏛️🛍️⭐</div>
+      <ul>
+        <li>10:00 大都会博物馆MET <span class="tag">已购票</span></li>
+        <li>SoHo 潮牌购物</li>
+        <li>17:30 Noda 米其林一星 <span class="tag">已订位</span></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="daytag">Day 11 · 周日</div>
+      <div class="date">9月13日 · 男单决赛🏆</div>
+      <div class="icons">🏆🥇</div>
+      <ul>
+        <li>Arthur Ashe 决赛 <span class="tag">已购票</span></li>
+        <li>见证冠军诞生</li>
+        <li>Keens Steakhouse 庆功宴</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="daytag">Day 12 · 周一</div>
+      <div class="date">9月14日 · 返程</div>
+      <div class="icons">🧳🛫</div>
+      <ul>
+        <li>Weehawken 河边漫步</li>
+        <li>17:00 前往 JFK</li>
+        <li>22:15 SQ23 起飞</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-note">🎾 US Open 2026 · Manhattan · Weehawken NJ · 图文行程仅供参考，具体以官方购票信息为准</div>
+</div>
+
+</body>
+</html>
